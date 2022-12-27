@@ -1,7 +1,6 @@
 import sys
 import settings
 from typing import List, Callable
-import tracemalloc
 
 
 def get_lines(file_path: str) -> List:
