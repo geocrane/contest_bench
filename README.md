@@ -48,14 +48,12 @@ out
 **Пример заполнения data.txt (задача "Дек"):**
 ```
 in
-
 4
 4
 push_front 861
 push_front -819
 pop_back
 pop_back
-
 
 out
 861
