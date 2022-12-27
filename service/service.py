@@ -1,6 +1,7 @@
 import sys
 import settings
 from typing import List, Callable
+import tracemalloc
 
 
 def get_lines(file_path: str) -> List:
@@ -133,6 +134,7 @@ def launch(func: Callable) -> None:
     для каждого теста. Запускает копию основной программы, передавая файл с
     входными данными для тестов и ответами для сравнения с результатом.
     """
+
     all_inputs = get_lines(settings.INPUT_FILE)
     all_outputs = get_lines(settings.OUTPUT_FILE)
     input_sep = [

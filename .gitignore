@@ -1,3 +1,7 @@
+bench.py
+data.txt
+test.py
+settings.py
 service/bench_temp.py
 service/calc.txt
 service/input.txt
