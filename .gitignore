@@ -1,7 +1,7 @@
-# # Ignore everything
-# *
+# Ignore everything
+*
 
-# # But not these files...
-# !.gitignore
-# !/service/service.py
-# !README.md
+# But not these files...
+!.gitignore
+!/service/service.py
+!README.md
