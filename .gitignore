@@ -3,5 +3,5 @@
 
 # But not these files...
 !.gitignore
-!service/service.py
+!/service/service.py
 !README.md
