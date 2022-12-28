@@ -95,6 +95,9 @@ def assertion_full(test: int) -> None:
     input = get_lines(settings.INPUT_FILE)
     output = get_lines(settings.OUTPUT_FILE)
 
+    if settings.CLEAN_SPACES:
+        calc = [line.strip() for line in calc]
+
     if calc != output:
         print(f"ТЕСТ {test + 1}: ОШИБКА!")
         print("Входные данные:")
@@ -118,6 +121,10 @@ def assertion_short(test: int) -> None:
     """
     calc = get_lines(settings.RESULT_FILE)
     output = get_lines(settings.OUTPUT_FILE)
+
+    if settings.CLEAN_SPACES:
+        calc = [line.strip() for line in calc]
+        
     if calc != output:
         print(
             f"ТЕСТ {test + 1}: ОШИБКА! Получены строки: {calc} "
