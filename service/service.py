@@ -71,6 +71,8 @@ def duplicate() -> Callable:
     with open("bench.py", "r") as bench:
         with open("service/bench_temp.py", "w") as bench_temp:
             lines = bench.readlines()
+            if 'if __name__ == "__main__":\n' not in lines:
+                raise ValueError("Поместите исполняемый код в блок if__name__=='__main__:'")
             for line in lines:
                 if line.startswith("if __name__ =="):
                     bench_temp.write("def call_main(file_path):\n")
@@ -124,7 +126,7 @@ def assertion_short(test: int) -> None:
 
     if settings.CLEAN_SPACES:
         calc = [line.strip() for line in calc]
-        
+
     if calc != output:
         print(
             f"ТЕСТ {test + 1}: ОШИБКА! Получены строки: {calc} "
