@@ -1,7 +1,7 @@
 <h1 align="center">Верстак-Контест - v.0.1</h1>
 
 <p align="center"><img src="https://img.shields.io/badge/made%20by-geocrane-green">
-<img src=https://img.shields.io/badge/Python-%203.7-blue>
+<img src=https://img.shields.io/badge/Python-%203.8.10-blue>
 </p>
 <h1 align="center"></h1>
 
@@ -96,7 +96,7 @@ True
 ## Используется:
 - Python 3.8.10
 
-##### ToDo:
+## ToDo:
 - Избавиться от буфера в виде txt файлов
 - Добавить автоматическое правильное заполнение данных в data.txt
 - Добавить возможность запуска не только из раздела "if name =="
